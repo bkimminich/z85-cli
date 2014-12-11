@@ -3,24 +3,19 @@
 Command line client for ZeroMQ Base-85 encoding
 
 ## Getting Started
-Install the module with: `npm install z85-cli`
-
-```javascript
-var z85_cli = require('z85-cli');
-z85_cli.awesome(); // "awesome"
-```
+Install the module with: `npm install -g z85-cli`
 
 ## Documentation
-_(Coming soon)_
 
-## Examples
-_(Coming soon)_
+### Encoding
+```z85 --encode <value>``` or ```z85 -e <value>```
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+### Decoding
+```z85 --decode <value>``` or ```z85 -d <value>```
 
-## Release History
-_(Nothing yet)_
+## Specification
+
+Please refer to [32/Z85 - ZeroMQ Base-85 Encoding Algorithm](http://rfc.zeromq.org/spec:32). 
 
 ## License
 Copyright (c) 2014 Bjoern Kimminich  
