@@ -1,40 +1,44 @@
 {
-  "name": "z85-cli",
-  "description": "Command line client for ZeroMQ Base-85 encoding",
-  "version": "0.1.0",
-  "homepage": "https://github.com/bkimminich/z85-cli",
-  "author": {
-    "name": "Bjoern Kimminich",
-    "email": "npmjs.org@kimminich.de"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/bkimminich/z85-cli.git"
-  },
-  "bugs": {
-    "url": "https://github.com/bkimminich/z85-cli/issues"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
+    "name": "z85-cli",
+    "description": "Command line client for ZeroMQ Base-85 encoding",
+    "version": "0.1.0",
+    "homepage": "https://github.com/bkimminich/z85-cli",
+    "author": {
+        "name": "Bjoern Kimminich",
+        "email": "npmjs.org@kimminich.de"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bkimminich/z85-cli.git"
+    },
+    "bugs": {
+        "url": "https://github.com/bkimminich/z85-cli/issues"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
+        }
+    ],
+    "main": "lib/z85-cli",
+    "engines": {
+        "node": "0.10.x"
+    },
+    "scripts": {
+        "test": "grunt nodeunit"
+    },
+    "dependencies": {
+        "z85": "~0.0"
+    },
+    "devDependencies": {
+        "grunt-contrib-jshint": "~0.6.4",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt-contrib-watch": "~0.5.3",
+        "grunt": "~0.4.5"
+    },
+    "keywords": [],
+    "preferGlobal": "true",
+    "bin": {
+        "z85": "lib/z85-cli.js"
     }
-  ],
-  "main": "lib/z85-cli",
-  "engines": {
-    "node": "0.10.x"
-  },
-  "scripts": {
-    "test": "grunt nodeunit"
-  },
-  "dependencies": {
-    "z85": "~0.0"
-  },
-  "devDependencies": {
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt": "~0.4.5"
-  },
-  "keywords": []
 }

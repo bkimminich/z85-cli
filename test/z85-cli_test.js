@@ -1,36 +1,59 @@
+/*jslint node: true */
 'use strict';
 
 var z85_cli = require('../lib/z85-cli.js');
 
-/*
-  ======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
-
-  Test methods:
-    test.expect(numAssertions)
-    test.done()
-  Test assertions:
-    test.ok(value, [message])
-    test.equal(actual, expected, [message])
-    test.notEqual(actual, expected, [message])
-    test.deepEqual(actual, expected, [message])
-    test.notDeepEqual(actual, expected, [message])
-    test.strictEqual(actual, expected, [message])
-    test.notStrictEqual(actual, expected, [message])
-    test.throws(block, [error], [message])
-    test.doesNotThrow(block, [error], [message])
-    test.ifError(value)
-*/
-
-exports['awesome'] = {
-  setUp: function(done) {
-    // setup here
-    done();
-  },
-  'no args': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(z85_cli.awesome(), 'awesome', 'should be awesome.');
-    test.done();
-  },
+exports['z85-cli'] = {
+    setUp: function (done) {
+        // setup here
+        done();
+    },
+    'no args': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli(), undefined, 'does not return anything.');
+        test.done();
+    },
+    'wrong mode': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli('-x', 'value'), undefined, 'does not return anything.');
+        test.done();
+    },
+    'decode non-z85 value': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli('-d', 'xxx'), undefined, 'does not return anything.');
+        test.done();
+    },
+    'encode unencodable value': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli('-e', 'xxx'), undefined, 'does not return anything.');
+        test.done();
+    },
+    'encode value': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli('--encode', 'Test'), 'raQb)', 'returns encoded value.');
+        test.done();
+    },
+    'encode value with shorthand mode': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli('-e', 'Test'), 'raQb)', 'returns encoded value.');
+        test.done();
+    },
+    'decode value': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli('--decode', 'raQb)'), 'Test', 'returns decoded value.');
+        test.done();
+    },
+    'decode value with shorthand mode': function (test) {
+        test.expect(1);
+        // tests here
+        test.equal(z85_cli.z85cli('-d', 'raQb)'), 'Test', 'returns decoded value.');
+        test.done();
+    }
 };
