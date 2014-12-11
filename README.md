@@ -1,4 +1,4 @@
-# z85-cli [![Build Status](https://secure.travis-ci.org/bjoer_000/z85-cli.png?branch=master)](http://travis-ci.org/bjoer_000/z85-cli)
+# z85-cli [![Build Status](https://secure.travis-ci.org/bkimminich/z85-cli.png?branch=master)](http://travis-ci.org/bkimminich/z85-cli)
 
 Command line client for ZeroMQ Base-85 encoding
 
