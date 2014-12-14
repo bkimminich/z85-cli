@@ -35,7 +35,7 @@
         "grunt-contrib-nodeunit": "~0.2.0",
         "grunt": "~0.4.5"
     },
-    "keywords": [],
+    "keywords": ["z85", "zeromq", "base85", "base-85", "encoding", "decoding", "encoder", "decoder"],
     "preferGlobal": "true",
     "bin": {
         "z85": "bin/z85-cli.js"
