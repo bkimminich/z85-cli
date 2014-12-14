@@ -1,7 +1,7 @@
 {
     "name": "z85-cli",
     "description": "Command line client for ZeroMQ Base-85 encoding",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "homepage": "https://github.com/bkimminich/z85-cli",
     "author": {
         "name": "Bjoern Kimminich",
