@@ -20,7 +20,7 @@
             "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
         }
     ],
-    "main": "lib/z85-cli",
+    "main": "bin/z85-cli",
     "engines": {
         "node": ">=0.10"
     },
@@ -38,6 +38,6 @@
     "keywords": [],
     "preferGlobal": "true",
     "bin": {
-        "z85": "lib/z85-cli.js"
+        "z85": "bin/z85-cli.js"
     }
 }
