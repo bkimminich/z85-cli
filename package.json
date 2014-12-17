@@ -1,43 +1,56 @@
 {
-    "name": "z85-cli",
-    "description": "Command line client for ZeroMQ Base-85 encoding",
-    "version": "0.1.3",
-    "homepage": "https://github.com/bkimminich/z85-cli",
-    "author": {
-        "name": "Bjoern Kimminich",
-        "email": "npmjs.org@kimminich.de"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/bkimminich/z85-cli.git"
-    },
-    "bugs": {
-        "url": "https://github.com/bkimminich/z85-cli/issues"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
-        }
-    ],
-    "main": "bin/z85-cli",
-    "engines": {
-        "node": ">=0.10"
-    },
-    "scripts": {
-        "test": "grunt test"
-    },
-    "dependencies": {
-        "z85": "~0.0"
-    },
-    "devDependencies": {
-        "grunt-contrib-jshint": "~0.6.4",
-        "grunt-contrib-nodeunit": "~0.2.0",
-        "grunt": "~0.4.5"
-    },
-    "keywords": ["z85", "zeromq", "base85", "base-85", "encoding", "decoding", "encoder", "decoder"],
-    "preferGlobal": "true",
-    "bin": {
-        "z85": "bin/z85-cli.js"
+  "name": "z85-cli",
+  "description": "Command line client for ZeroMQ Base-85 encoding",
+  "version": "0.1.4",
+  "homepage": "https://github.com/bkimminich/z85-cli",
+  "author": {
+    "name": "Bjoern Kimminich",
+    "email": "npmjs.org@kimminich.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bkimminich/z85-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bkimminich/z85-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
     }
+  ],
+  "main": "bin/z85-cli",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "test": "grunt test",
+    "coveralls": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | coveralls"
+  },
+  "dependencies": {
+    "z85": "~0.0"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.9.0",
+    "jscoverage": "~0.5.9",
+    "coveralls": "~2.11.2",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0"
+  },
+  "keywords": [
+    "z85",
+    "zeromq",
+    "base85",
+    "base-85",
+    "encoding",
+    "decoding",
+    "encoder",
+    "decoder"
+  ],
+  "preferGlobal": "true",
+  "bin": {
+    "z85": "bin/z85-cli.js"
+  }
 }
