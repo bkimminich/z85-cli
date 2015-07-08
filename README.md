@@ -26,5 +26,5 @@ z85 --decode [-d] <value>
 Please refer to [32/Z85 - ZeroMQ Base-85 Encoding Algorithm](http://rfc.zeromq.org/spec:32). 
 
 ## License
-Copyright (c) 2014 Bjoern Kimminich  
+Copyright (c) 2015 Bjoern Kimminich  
 Licensed under the MIT license.
