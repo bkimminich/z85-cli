@@ -1,11 +1,10 @@
 {
   "name": "z85-cli",
   "description": "Command line client for ZeroMQ Base-85 encoding",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "homepage": "https://github.com/bkimminich/z85-cli",
   "author": {
-    "name": "Bjoern Kimminich",
-    "email": "npmjs.org@kimminich.de"
+    "name": "Bjoern Kimminich <npmjs.org@kimminich.de> (https://github.com/bkimminich)"
   },
   "repository": {
     "type": "git",
@@ -14,12 +13,7 @@
   "bugs": {
     "url": "https://github.com/bkimminich/z85-cli/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "main": "bin/z85-cli",
   "engines": {
     "node": ">=0.10"
@@ -34,10 +28,10 @@
   },
   "devDependencies": {
     "nodeunit": "~0.9.0",
-    "jscoverage": "~0.5.9",
+    "jscoverage": "~0.6.0",
     "coveralls": "~2.11.2",
     "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-jshint": "~0.11.3",
     "grunt-contrib-nodeunit": "~0.4.1",
     "codeclimate-test-reporter": "~0.1.1"
   },
