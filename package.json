@@ -4,8 +4,7 @@
   "version": "0.1.7",
   "homepage": "https://github.com/bkimminich/z85-cli",
   "author": {
-    "name": "Bjoern Kimminich",
-    "email": "npmjs.org@kimminich.de"
+    "name": "Bjoern Kimminich <npmjs.org@kimminich.de> (https://github.com/bkimminich)"
   },
   "repository": {
     "type": "git",
@@ -14,12 +13,7 @@
   "bugs": {
     "url": "https://github.com/bkimminich/z85-cli/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "main": "bin/z85-cli",
   "engines": {
     "node": ">=0.10"
