@@ -19,7 +19,7 @@
     "node": ">=0.10"
   },
   "scripts": {
-    "test": "grunt",
+    "test": "standard && grunt",
     "coveralls": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | coveralls",
     "codeclimate": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | codeclimate-test-reporter"
   },
@@ -31,9 +31,9 @@
     "jscoverage": "~0.6",
     "coveralls": "~2.11",
     "grunt": "~1.0",
-    "grunt-contrib-jshint": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
-    "codeclimate-test-reporter": "~0.3"
+    "codeclimate-test-reporter": "~0.3",
+    "standard": "^8.0.0"
   },
   "keywords": [
     "z85",
@@ -48,5 +48,10 @@
   "preferGlobal": "true",
   "bin": {
     "z85": "bin/z85-cli.js"
+  },
+  "standard": {
+    "env": [
+      "node"
+    ]
   }
 }

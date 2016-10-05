@@ -1,35 +1,18 @@
-/*jslint node: true */
-'use strict';
+/* jslint node: true */
+'use strict'
 
 module.exports = function (grunt) {
-
     // Project configuration.
-    grunt.initConfig({
-        nodeunit: {
-            files: ['test/**/*_test.js']
-        },
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc'
-            },
-            gruntfile: {
-                src: 'Gruntfile.js'
-            },
-            lib: {
-                src: ['lib/**/*.js']
-            },
-            test: {
-                src: ['test/**/*.js']
-            }
-        }
-    });
+  grunt.initConfig({
+    nodeunit: {
+      files: ['test/**/*_test.js']
+    }
+  })
 
     // These plugins provide necessary tasks.
-    grunt.loadNpmTasks('grunt-contrib-nodeunit');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-nodeunit')
 
     // Default task.
-    grunt.registerTask('test', ['nodeunit']);
-    grunt.registerTask('default', ['jshint', 'test']);
-
-};
+  grunt.registerTask('test', ['nodeunit'])
+  grunt.registerTask('default', ['test'])
+}
