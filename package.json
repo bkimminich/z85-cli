@@ -1,11 +1,10 @@
 {
   "name": "z85-cli",
   "description": "Command line client for ZeroMQ Base-85 encoding",
-  "version": "0.1.4",
+  "version": "0.1.9",
   "homepage": "https://github.com/bkimminich/z85-cli",
   "author": {
-    "name": "Bjoern Kimminich",
-    "email": "npmjs.org@kimminich.de"
+    "name": "Bjoern Kimminich <npmjs.org@kimminich.de> (https://github.com/bkimminich)"
   },
   "repository": {
     "type": "git",
@@ -14,30 +13,27 @@
   "bugs": {
     "url": "https://github.com/bkimminich/z85-cli/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/bkimminich/z85-cli/blob/master/LICENSE-MIT"
-    }
-  ],
+  "license": "MIT",
   "main": "bin/z85-cli",
   "engines": {
     "node": ">=0.10"
   },
   "scripts": {
-    "test": "grunt test",
-    "coveralls": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | coveralls"
+    "test": "grunt",
+    "coveralls": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | coveralls",
+    "codeclimate": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | codeclimate-test-reporter"
   },
   "dependencies": {
     "z85": "~0.0"
   },
   "devDependencies": {
-    "nodeunit": "~0.9.0",
-    "jscoverage": "~0.5.9",
-    "coveralls": "~2.11.2",
-    "grunt": "~0.4.5",
-    "grunt-contrib-jshint": "~0.6.4",
-    "grunt-contrib-nodeunit": "~0.2.0"
+    "nodeunit": "~0.10",
+    "jscoverage": "~0.6",
+    "coveralls": "~2.11",
+    "grunt": "~1.0",
+    "grunt-contrib-jshint": "~1.0",
+    "grunt-contrib-nodeunit": "~1.0",
+    "codeclimate-test-reporter": "~0.3"
   },
   "keywords": [
     "z85",
