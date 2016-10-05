@@ -1,8 +1,16 @@
 language: node_js
 node_js:
-  - '0.10'
-  - '0.11'
+  - 4
+  - 0.12
+  - 0.11
+  - 0.10
+addons:
+  code_climate:
+    repo_token:
+      secure: CH0YLY3FhLz9J+6ZmCwan3wCiUMJk3oE9dAqZtloSg1h7gmWJL1RZPyispI0fJ0W6oumTARAw3nHaU6E8hSirf7/mDbGCZjzw3LTQW0v0RyPGVtgYjirGhD2ZlaUpidzFqJMaSSwStoP3+TQSEwuhqDBdPVM544ZyIice+zXTg8=
 before_script:
   - npm install -g grunt-cli
 after_script:
   - npm run coveralls
+  - npm run codeclimate
+sudo: false
