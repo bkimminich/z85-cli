@@ -1,5 +1,5 @@
 # Command line client for ZeroMQ Base-85 encoding
-FROM        node:4-onbuild
+FROM        mhart/alpine-node:base
 MAINTAINER  Bjoern Kimminich <docker.com@kimminich.de>
 
 RUN npm install z85-cli -g
