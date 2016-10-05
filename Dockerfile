@@ -4,4 +4,6 @@ MAINTAINER  Bjoern Kimminich <docker.com@kimminich.de>
 
 RUN npm install z85-cli -g
 
-CMD /bin/bash
+WORKDIR /usr/bin
+
+CMD bash

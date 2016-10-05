@@ -12,7 +12,8 @@ npm install -g z85-cli
 Or if you prefer [Docker](https://hub.docker.com/):
 
 ```
-docker run -it bkimminich/z85-cli
+docker pull bkimminich/z85-cli
+docker run --rm -it bkimminich/z85-cli
 ```
 
 ## Documentation
