@@ -6,4 +6,4 @@ RUN npm install z85-cli -g
 
 WORKDIR /usr/bin
 
-CMD /bin/bash
+CMD ./bin/bash
