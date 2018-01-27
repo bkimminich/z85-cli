@@ -9,13 +9,6 @@ Install the module with:
 npm install -g z85-cli
 ```
 
-Or if you prefer [Docker](https://hub.docker.com/):
-
-```
-docker pull bkimminich/z85-cli
-docker run --rm -it bkimminich/z85-cli
-```
-
 ## Documentation
 
 ### Encoding
