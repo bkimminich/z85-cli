@@ -1,27 +1,25 @@
 /* jslint node: true */
-'use strict'
-
-var z85cli = process.env.Z85_CLI_COVERAGE ? require('../lib-cov/z85-cli') : require('../lib/z85-cli')
+const z85cli = process.env.Z85_CLI_COVERAGE ? require('../lib-cov/z85-cli') : require('../lib/z85-cli')
 
 exports['z85-cli'] = {
   'no args': function (test) {
     test.expect(1)
-    test.throws(function () { z85cli.z85cli() }, Error, 'throws an error.')
+    test.throws(() => { z85cli.z85cli() }, Error, 'throws an error.')
     test.done()
   },
   'wrong mode': function (test) {
     test.expect(1)
-    test.throws(function () { z85cli.z85cli('-x', 'value') }, '', 'throws an error.')
+    test.throws(() => { z85cli.z85cli('-x', 'value') }, '', 'throws an error.')
     test.done()
   },
   'decode non-z85 value': function (test) {
     test.expect(1)
-    test.throws(function () { z85cli.z85cli('-d', 'xxx') }, Error, 'throws an error.')
+    test.throws(() => { z85cli.z85cli('-d', 'xxx') }, Error, 'throws an error.')
     test.done()
   },
   'encode unencodable value': function (test) {
     test.expect(1)
-    test.throws(function () { z85cli.z85cli('-e', 'xxx') }, Error, 'throws an error.')
+    test.throws(() => { z85cli.z85cli('-e', 'xxx') }, Error, 'throws an error.')
     test.done()
   },
   'encode value': function (test) {
