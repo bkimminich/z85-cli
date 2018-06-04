@@ -1,9 +1,9 @@
 language: node_js
 node_js:
+  - 10
   - 9
   - 8
   - 6
-  - 4
 addons:
   code_climate:
     repo_token:
