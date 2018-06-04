@@ -1,7 +1,7 @@
 {
   "name": "z85-cli",
   "description": "Command line client for ZeroMQ Base-85 encoding",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "homepage": "https://github.com/bkimminich/z85-cli",
   "author": {
     "name": "Bjoern Kimminich <npmjs.org@kimminich.de> (https://github.com/bkimminich)"
@@ -33,7 +33,7 @@
     "grunt": "~1.0",
     "grunt-contrib-nodeunit": "~1.0",
     "codeclimate-test-reporter": "~0.5",
-    "standard": "~10"
+    "standard": "~11"
   },
   "keywords": [
     "z85",
