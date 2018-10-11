@@ -1,4 +1,4 @@
-# z85-cli [![npm](https://img.shields.io/npm/v/:z85-cli.svg)](https://www.npmjs.com/package/z85-cli) [![npm Downloads](https://img.shields.io/npm/dm/z85-cli.svg)](https://www.npmjs.com/package/z85-cli)
+# z85-cli [![npm Downloads](https://img.shields.io/npm/dm/z85-cli.svg)](https://www.npmjs.com/package/z85-cli)
 
 [![Build Status](https://secure.travis-ci.org/bkimminich/z85-cli.png?branch=master)](http://travis-ci.org/bkimminich/z85-cli)
 [![Coverage Status](https://img.shields.io/coveralls/bkimminich/z85-cli.svg)](https://coveralls.io/r/bkimminich/z85-cli)
