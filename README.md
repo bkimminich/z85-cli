@@ -10,7 +10,8 @@
 
 Command line client for ZeroMQ Base-85 encoding
 
-## Getting Started
+## Getting Started ![node](https://img.shields.io/node/v/z85-cli.svg)
+
 Install the module with:
 
 ```
