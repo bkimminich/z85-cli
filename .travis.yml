@@ -1,5 +1,6 @@
 language: node_js
 node_js:
+  - 11
   - 10
   - 9
   - 8
@@ -13,15 +14,13 @@ before_script:
 after_script:
   - npm run coveralls
   - npm run codeclimate
-after_success:
-- bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
 sudo: false
 deploy:
   provider: npm
   email: npmjs.org@kimminich.de
   api_key:
-    secure: kQth2GUlaoASUG/gE4hc3l3FJrwjfhNhIvirx3aGbw/DB0ljw0jA9U5P1vt+sdlOMoQffHhmbE6Gb4jvQmw1+xIfQqL6BdJTa07qefkrKN8oeDHuXNnz5zKkpiCj76sPblIFVpwTGWrAqCcro+hJUsEBlWCr4TwOeWZOJNBvkxxAUwVn44fVcshWIXQo5rchF4ywPPcJSRY3P4rFkxyvfmgdq5g7ka7Gyr8t99Ahg7iI7co0sKgH7aZdz8lxJwfUAnULatcsU+cVCIv91xkFMhw4avCSC1hO9KBNlZpd8Db4l9Wa4Kgd5+FdevPenDoDEUlCrYCUEb82oWDeZrNYf2oATmBbRIMm8NBnW0kAvBdXuSFopA/1IIvinllwj2gdnj7WX1xkA4G2A+PwbTyMqmkqYWDcGRUJYtJf2jJOsH1SdSNJ3H3CqWfChDq73YpEwG6cdYvhgBIIeRAt3i7r70bbT9FfDRevcBoumO21hsrpa4XIPblTSubk+sbraoca71KCbi2hMcNAseFGL6hn6g9JsPZMTvMuMz2uGpLGv6xwC4G0tmKJF+6QHVJkAFnHMePVhJ8oP9M/ZKo4iSrKuILH50RGI12+kLLr4SqqWUNY7XQwwVJr9zmG/Is982MWiUMvrsEgBS3jPoZ3YnXOvdthmLqBkhZiD0P0VmiGj38=
+    secure: GdG3IqhIoDCeyQ1iBMFu8U6dYzsXS2cej0Jj8aF6y48jjmNlt8zl8VyAtSHLGCRWMthPJvWOVbavmqonDrr1kG2bxZv4h5LMgsHscGDr1osizOgsV96KRgHkM5W7JrcG/GUSAKSAJAdariqps27eiVZkweAnX/F/p6oqzIAr/VM=
   on:
     tags: true
     repo: bkimminich/z85-cli
-    node: 8
+    node: 10
