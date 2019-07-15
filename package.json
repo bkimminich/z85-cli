@@ -16,7 +16,7 @@
   "license": "MIT",
   "main": "bin/z85-cli",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=6"
   },
   "scripts": {
     "test": "standard && grunt",
@@ -24,16 +24,16 @@
     "codeclimate": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | codeclimate-test-reporter"
   },
   "dependencies": {
-    "z85": "~0.0"
+    "z85": "^0.0.2"
   },
   "devDependencies": {
-    "nodeunit": "~0.11",
-    "jscoverage": "~0.6",
-    "coveralls": "~3.0",
-    "grunt": "~1.0",
-    "grunt-contrib-nodeunit": "~2.0",
-    "codeclimate-test-reporter": "~0.5",
-    "standard": "~12"
+    "nodeunit": "^0.11.3",
+    "jscoverage": "^0.6.0",
+    "coveralls": "^3.0.5",
+    "grunt": "^1.0.4",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "codeclimate-test-reporter": "^0.5.1",
+    "standard": "^13.0.2"
   },
   "keywords": [
     "z85",
