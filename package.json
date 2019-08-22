@@ -33,7 +33,7 @@
     "grunt": "^1.0.4",
     "grunt-contrib-nodeunit": "^2.0.0",
     "codeclimate-test-reporter": "^0.5.1",
-    "standard": "^13.0.2"
+    "standard": "^14.0.1"
   },
   "keywords": [
     "z85",
