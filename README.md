@@ -6,7 +6,6 @@
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/bkimminich/z85-cli.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/bkimminich/z85-cli/context:javascript)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/bkimminich/z85-cli.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/bkimminich/z85-cli/alerts/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![Greenkeeper badge](https://badges.greenkeeper.io/bkimminich/z85-cli.svg)](https://greenkeeper.io/)
 
 Command line client for ZeroMQ Base-85 encoding
 
