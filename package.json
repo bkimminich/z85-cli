@@ -13,7 +13,7 @@
   "bugs": {
     "url": "https://github.com/bkimminich/z85-cli/issues"
   },
-  "license": "MIT",                                   Up
+  "license": "MIT",
   "main": "bin/z85-cli",
   "engines": {
     "node": ">=8"
