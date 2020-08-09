@@ -16,7 +16,7 @@
   "license": "MIT",
   "main": "bin/z85-cli",
   "engines": {
-    "node": ">=0.10"
+    "node": ">=8"
   },
   "scripts": {
     "test": "standard && grunt",
