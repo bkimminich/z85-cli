@@ -2,7 +2,6 @@
 
 [![Build Status](https://secure.travis-ci.org/bkimminich/z85-cli.png?branch=master)](http://travis-ci.org/bkimminich/z85-cli)
 [![Coverage Status](https://img.shields.io/coveralls/bkimminich/z85-cli.svg)](https://coveralls.io/r/bkimminich/z85-cli)
-[![Code Climate](https://codeclimate.com/github/bkimminich/z85-cli/badges/gpa.svg)](https://codeclimate.com/github/bkimminich/z85-cli)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/bkimminich/z85-cli.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/bkimminich/z85-cli/context:javascript)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/bkimminich/z85-cli.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/bkimminich/z85-cli/alerts/)
 [![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)

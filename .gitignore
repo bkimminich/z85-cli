@@ -1,6 +1,7 @@
 *.log
 coverage/
 reports/
+.nyc_output/
 
 # Intellij
 .idea/

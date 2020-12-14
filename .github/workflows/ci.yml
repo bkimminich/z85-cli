@@ -1,0 +1,60 @@
+name: "CI Pipeline"
+on:
+  push:
+    branches:
+      - '*'
+    paths-ignore:
+      - '*.md'
+      - 'LICENSE'
+    tags-ignore:
+      - '*'
+  pull_request:
+    branches:
+      - develop
+    paths-ignore:
+      - '*.md'
+      - 'LICENSE'
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Check out Git repository"
+        uses: actions/checkout@v2
+      - name: "Use Node.js 14"
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: "Install application"
+        run: npm install --ignore-scripts
+      - name: "Lint code"
+        run: npm run lint
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [10, 12, 14]
+    steps:
+      - name: "Check out Git repository"
+        uses: actions/checkout@v2
+      - name: "Use Node.js ${{ matrix.node-version }}"
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: "Cache Node.js modules"
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
+      - name: "Install application"
+        run: npm install
+      - name: "Execute unit tests"
+        run: npm test
+      - name: "Publish coverage to Coveralls"
+        if: github.event_name == 'push' && matrix.node-version == '14'
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: ./build/reports/coverage/lcov.info
