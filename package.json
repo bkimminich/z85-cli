@@ -1,7 +1,7 @@
 {
   "name": "z85-cli",
   "description": "Command line client for ZeroMQ Base-85 encoding",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "homepage": "https://github.com/bkimminich/z85-cli",
   "author": {
     "name": "Bjoern Kimminich <npmjs.org@kimminich.de> (https://github.com/bkimminich)"
@@ -19,19 +19,25 @@
     "node": ">=8"
   },
   "scripts": {
-    "test": "standard && grunt",
-    "coveralls": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | coveralls",
-    "codeclimate": "jscoverage lib && Z85_CLI_COVERAGE=1 nodeunit --reporter=lcov test | codeclimate-test-reporter"
+    "lint": "standard",
+    "test": "nyc nodeunit test"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "lib"
+    ],
+    "report-dir": "./build/reports/coverage",
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
   },
   "dependencies": {
     "z85": "~0.0"
   },
   "devDependencies": {
-    "codeclimate-test-reporter": "~0.5",
-    "coveralls": "^3.0.14",
-    "grunt": "^1.0.4",
-    "grunt-contrib-nodeunit": "~2.0",
-    "jscoverage": "~0.6",
+    "nyc": "~15.1.0",
     "nodeunit": "~0.11",
     "standard": "~12"
   },
