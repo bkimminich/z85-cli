@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2014-2021 Bjoern Kimminich.
+ * SPDX-License-Identifier: MIT
+ */
+
 #!/usr/bin/env node
 /* jslint node: true */
 const lib = require('../lib/z85-cli')

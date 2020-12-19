@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2014-2021 Bjoern Kimminich.
+ * SPDX-License-Identifier: MIT
+ */
+
 /* jslint node: true */
 const z85cli = process.env.Z85_CLI_COVERAGE ? require('../lib-cov/z85-cli') : require('../lib/z85-cli')
 
